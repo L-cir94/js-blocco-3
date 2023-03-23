@@ -90,7 +90,7 @@ let cars = [
 
 
 ]
-const autoBenza = cars.filter((cars) => {
+/* const autoBenza = cars.filter((cars) => {
   return cars["alimentazione"] === "benzina";
 })
 console.log(autoBenza);
@@ -101,4 +101,13 @@ console.log(autoDiesel);
 const altrAlimentazione = cars.filter((cars) => {
   return cars["alimentazione"] !== "diesel" && cars["alimentazione"] !== "benzina" ;
 })
+console.log(altrAlimentazione) */
+
+//meno codice:
+const autoBenza = cars.filter((cars) => cars ["alimentazione"] === "benzina")
+console.log(autoBenza);
+
+const autoDiesel = cars.filter((cars) => cars ["alimentazione"] === "diesel")
+console.log(autoDiesel);
+const altrAlimentazione = cars.filter((cars) => cars["alimentazione"] !== "diesel" && cars ["alimentazione"] !== "benzina")
 console.log(altrAlimentazione)
