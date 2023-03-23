@@ -16,3 +16,4 @@ let nomi = [
 ]
 
 const newArr = nomi.map(nomiGiustificati => nomi.chart(0))
+
